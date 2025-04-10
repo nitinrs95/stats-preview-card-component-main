@@ -1,0 +1,177 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #0a0c1c;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  padding: 0 2rem;
+}
+@media only screen and (max-width: 40.625em) {
+  main {
+    padding: 4rem 4rem;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 110rem;
+}
+@media only screen and (max-width: 62.5em) {
+  .grid-container {
+    max-width: 75rem;
+  }
+}
+@media only screen and (max-width: 40.625em) {
+  .grid-container {
+    max-width: 40rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+.insights {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ab5cdb;
+}
+.insights__content {
+  grid-column: span 6;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  background-color: #1b1937;
+}
+@media only screen and (max-width: 62.5em) {
+  .insights__content {
+    padding: 3rem;
+    gap: 1.5rem;
+  }
+}
+@media only screen and (max-width: 40.625em) {
+  .insights__content {
+    padding: 4rem 3rem;
+    text-align: center;
+  }
+}
+.insights__title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 4.4rem;
+}
+@media only screen and (max-width: 40.625em) {
+  .insights__title {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+}
+.insights__highlight {
+  color: #ab5cdb;
+}
+.insights__description {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 3rem;
+  margin-right: 5rem;
+}
+@media only screen and (max-width: 62.5em) {
+  .insights__description {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 40.625em) {
+  .insights__description {
+    margin-bottom: 4rem;
+    margin-right: 0rem;
+  }
+}
+@media only screen and (max-width: 40.625em) {
+  .insights__description {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+}
+.insights__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (max-width: 40.625em) {
+  .insights__stats {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+  }
+}
+.insights__stat {
+  display: flex;
+  flex-direction: column;
+}
+.insights__value {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.insights__label {
+  font-family: "Lexend Decs", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+.insights__container {
+  position: relative;
+  grid-column: span 6;
+  overflow: hidden;
+}
+@media only screen and (max-width: 40.625em) {
+  .insights__container {
+    grid-row: 1/2;
+  }
+}
+.insights__image {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+.insights__overlay {
+  position: absolute;
+  background-color: rgba(171, 92, 219, 0.25);
+  top: 0;
+  height: 100%;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

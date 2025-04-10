@@ -1,0 +1,16 @@
+@use "../abstracts/" as a;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 110rem;
+
+  @include a.respond(tab-land) {
+    max-width: 75rem;
+  }
+
+  @include a.respond(phone) {
+    max-width: 40rem;
+    grid-template-columns: 1fr;
+  }
+}

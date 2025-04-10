@@ -1,0 +1,8 @@
+@use "../abstracts/" as a;
+
+main {
+  padding: 0 2rem;
+  @include a.respond(phone) {
+    padding: 4rem 4rem;
+  }
+}

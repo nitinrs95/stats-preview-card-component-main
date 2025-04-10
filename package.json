@@ -1,0 +1,25 @@
+{
+  "name": "stats-preview-card-component-main",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --no-source-maps",
+    "optimize-images": "node src/optimize-images.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.14.4",
+    "autoprefixer": "^10.4.21",
+    "del-cli": "^6.0.0",
+    "imagemin": "^9.0.1",
+    "imagemin-cli": "^8.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "parcel": "^2.14.4",
+    "rimraf": "^6.0.1",
+    "sass": "^1.86.3"
+  }
+}

@@ -1,0 +1,29 @@
+@use "../abstracts/" as a;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include a.respond(tab-port) {
+    font-size: 55%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: a.$color-black;
+  color: a.$color-white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

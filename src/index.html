@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
+  <body>
+    <main>
+      <div class="insights grid-container">
+        <div class="insights__content">
+          <h2 class="insights__title">
+            Get <span class="insights__highlight">insights</span> that help your
+            business grow.
+          </h2>
+          <p class="insights__description">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <div class="insights__stats">
+            <div class="insights__stat">
+              <span class="insights__value">10k+</span
+              ><span class="insights__label"> companies</span>
+            </div>
+            <div class="insights__stat">
+              <span class="insights__value">314</span
+              ><span class="insights__label"> templates</span>
+            </div>
+            <div class="insights__stat">
+              <span class="insights__value">12M+</span
+              ><span class="insights__label"> queries</span>
+            </div>
+          </div>
+        </div>
+        <div class="insights__container">
+          <picture>
+            <source
+              media="(max-width:40.625em)"
+              srcset="images/image-header-mobile.jpg"
+            />
+            <source
+              media="(min-width:40.626em)"
+              srcset="images/image-header-desktop.jpg"
+            />
+            <img
+              class="insights__image"
+              srcset="images/image-header-desktop.jpg"
+            />
+          </picture>
+          <div class="insights__overlay"></div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
